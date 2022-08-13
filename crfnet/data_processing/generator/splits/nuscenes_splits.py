@@ -22,9 +22,15 @@ Scenes.default = Scenes(
 
 ### Debug scenes
 Scenes.debug = Scenes(
-    train= [0],
-    val= [0],
-    test= [0],
+    # train= [0],
+    # val= [0],
+    # test= [0],
+    # test= [0],
+    # test_rain= [0],
+    # test_night= [0]
+    train= [0, 2, 3, 4, 5, 7, 9],
+    val= [1, 8],
+    test= [6],
     test_rain= [0],
-    test_night= [0]
+    test_night= [7, 8, 9]
 )

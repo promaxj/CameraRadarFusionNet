@@ -118,7 +118,8 @@ if __name__ == '__main__':
 
     model_name = args.config.split('/')[-1] 
     model_name = model_name.split('.')[0]
-    cfg.model_name = cfg.runtime + "_" + model_name
+    # cfg.model_name = cfg.runtime + "_" + model_name
+    cfg.model_name = model_name + "_test_" + cfg.runtime
     if args.st:
         score_threshold = args.st
     else:

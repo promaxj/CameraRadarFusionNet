@@ -230,7 +230,7 @@ if __name__ == '__main__':
     mean_ap = sum([a * b for a, b in zip(total_instances, aps)]) / sum(total_instances)
 
     ## Store precision recall values
-    save_path = './' + cfg.model_name + '/'
+    save_path = './' + cfg.model_name + '_' + 'evaluate' + '_' +cfg.runtime + '/'
     if not os.path.exists(save_path):
         os.makedirs(save_path)
     data_out = os.path.join(save_path, "pre_rec_category_" + cfg.model_name + ".csv")
